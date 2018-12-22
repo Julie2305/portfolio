@@ -1,0 +1,196 @@
+body {
+  font-family: 'calibri';
+  margin: auto;
+  max-width: 1024px;
+}
+
+.header {
+  margin: 0 20px 30px 20px;
+}
+
+.section {
+  margin: 0 20px 30px 20px;
+}
+
+h1 {
+  font-size: 40px;
+  color: #67000c;
+}
+
+h2 {
+  font-size: 30px;
+  color: #94d0a2;
+  border-top: 1px solid #ff9da8;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  margin-top: none;
+}
+
+h3 {
+  font-size: 20px;
+  color: black;
+}
+
+p {
+  font-size: 20px
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.link {
+  color: #67000c;
+  text-decoration: underline #67000c;
+  overflow-wrap: break-word;
+  width: 275px;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid #dfb53b;
+}
+
+.logo {
+  margin-top: 2.5rem;
+}
+
+.headerTitle{
+  text-align: right;  
+}
+
+.imageWide {
+  width: 100%;
+  display: flex;
+}
+
+.imageSmall {
+  width: 100%;
+  display: none; 
+}
+
+.colorOne {
+  width: 60px;
+  height: 60px;
+  background-color: #67000c;
+}
+
+.colorTwo {
+  width: 60px;
+  height: 60px;
+  background-color: #ff9da8;
+}
+
+.colorThree {
+  width: 60px;
+  height: 60px;
+  background-color: #94d0a2;
+}
+
+.colorFour {
+  width: 60px;
+  height: 60px;
+  background-color: #dfb53b;
+}
+
+.portfolioItem {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.colorList{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 576px) {
+  .colorList {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    text-align: left;
+  }
+  
+  .imageSmall {
+    display: flex; 
+  }
+  
+  .imageWide {
+    display: none; 
+  }
+  
+  .mainContent {
+    display: flex;
+  }
+  
+  .colorList {
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .color {
+    width: 50%;
+  }
+  
+  .mainImage {
+    max-width: 75%;
+    margin-left: auto;
+  }
+  
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .portfolioItem {
+    align-items: flex-start;
+    /* width: 30%; */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .colorList {
+    flex-direction: column;
+    width: 10%;
+  }
+  
+  .headerContent {
+    margin-left: auto;
+    max-width: 90%;
+  }
+  
+  .mainImage {
+    max-width: 90%;
+  }
+
+  .imageSmall {
+    display: none; 
+  }
+
+  .imageWide {
+    display: flex ; 
+  }
+
+  .portfolioContent {
+    width: 90%;
+    margin-left: auto;
+  }
+
+  .portfolioItem {
+    width: 33%;
+  }
+
+}
+
+  
